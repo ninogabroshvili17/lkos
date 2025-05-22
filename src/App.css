@@ -4,14 +4,37 @@
   box-sizing: border-box;
 }
 
-.demon-cards {
-  display: flex;
-  justify-content: space-around;
-  background-color: antiquewhite;
-  padding: 40px;
+.App {
+  background-color: rgb(40, 34, 28);
 }
 
-.demon-cards li {
+.wrapper {
+  padding: 40px 80px;
+}
+
+header ul {
+  display: flex;
+  justify-content: space-between;
+  background-color: rgb(69, 61, 51);
+}
+
+header li {
   list-style: none;
   cursor: pointer;
+}
+
+.demons-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 30px;
+  list-style: none;
+}
+
+.demon-card img {
+  width: 100%;
+}
+
+.demon-card h3{
+  text-align: center;
+  color: rgb(143, 127, 127);
 }
